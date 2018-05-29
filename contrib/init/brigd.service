@@ -1,0 +1,26 @@
+[Unit]
+Description=BRIG's distributed currency daemon
+After=network.target
+
+[Service]
+User=brig
+Group=brig
+
+Type=forking
+PIDFile=/var/lib/brigd/brigd.pid
+
+ExecStart=/usr/bin/brigd -daemon -pid=/var/lib/brigd/brigd.pid \
+          -conf=/etc/brig/brig.conf -datadir=/var/lib/brigd
+
+ExecStop=-/usr/bin/brig-cli -conf=/etc/brig/brig.conf \
+         -datadir=/var/lib/brigd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

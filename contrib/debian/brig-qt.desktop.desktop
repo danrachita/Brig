@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BRIG
+Comment=BRIG P2P Cryptocurrency
+Exec=brig-qt %u
+Terminal=false
+Type=Application
+Icon=brig128
+MimeType=x-scheme-handler/brig;
+Categories=Office;Finance;
+Name[en_US]=brig-qt.desktop

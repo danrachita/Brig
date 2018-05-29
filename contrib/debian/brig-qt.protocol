@@ -1,0 +1,11 @@
+[Protocol]
+exec=brig-qt '%u'
+protocol=brig
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

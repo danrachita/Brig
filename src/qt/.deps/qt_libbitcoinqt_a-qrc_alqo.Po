@@ -1,0 +1,4 @@
+qt/qt_libbitcoinqt_a-qrc_brig.o: qt/qrc_brig.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

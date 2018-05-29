@@ -1,0 +1,26 @@
+# /etc/conf.d/brigd: config file for /etc/init.d/brigd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/brig/brig.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/brigd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/brigd.pid"
+
+# Where to write brigd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/brigd"
+
+# User and group to own brigd process
+#BITCOIND_USER="brig"
+#BITCOIND_GROUP="brig"
+
+# Path to brigd executable
+#BITCOIND_BIN="/usr/bin/brigd"
+
+# Nice value to run brigd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
