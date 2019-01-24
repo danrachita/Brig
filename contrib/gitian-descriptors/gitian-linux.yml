@@ -1,5 +1,5 @@
 ---
-name: "brig-linux-2.3"
+name: "brig-linux-2.0"
 enable_cache: true
 suites:
 - "trusty"
